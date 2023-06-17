@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #tog{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="tog">
+        <span>
+            Hello!
+        </span>
+    </div>
+    <button id="btn">Click Here</button>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(
+                function(){
+                    $('#tog').toggle();
+                }
+            )
+        });
+    </script>
+</body>
+</html>
